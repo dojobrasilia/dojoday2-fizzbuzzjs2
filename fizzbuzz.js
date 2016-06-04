@@ -8,10 +8,14 @@ describe('FizzBuzz', () => {
   it('returns the same value', () => {
     assert.equal('1', fizzBuzz(1));
   });
+
+  it('returns fizz', () => {
+    assert.equal('fizz', fizzBuzz(3));
+  });
 });
 
 function fizzBuzz(value) {
-  return value
+  return value % 3 == 0 ? "fizz" : value;
 }
 
 // fizzbuzz(1) => 1
