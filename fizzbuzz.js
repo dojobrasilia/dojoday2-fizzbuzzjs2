@@ -4,11 +4,15 @@ const assert = require('assert');
 //   return 'Hello ' + name;
 // }
 //
-// describe('FizzBuzz', () => {
-//   it('greets the user', () => {
-//     assert.equal('Hello World', hello('Julio'));
-//   });
-// });
+describe('FizzBuzz', () => {
+  it('returns the same value', () => {
+    assert.equal('1', fizzBuzz(1));
+  });
+});
+
+function fizzBuzz(value) {
+  return value
+}
 
 // fizzbuzz(1) => 1
 // fizzbuzz(2) => 2
