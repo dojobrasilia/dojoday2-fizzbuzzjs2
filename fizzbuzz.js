@@ -12,10 +12,21 @@ describe('FizzBuzz', () => {
   it('returns fizz', () => {
     assert.equal('fizz', fizzBuzz(3));
   });
+
+  it('returns buzz', () => {
+    assert.equal('buzz', fizzBuzz(5));
+  });
+
 });
 
 function fizzBuzz(value) {
-  return value % 3 == 0 ? "fizz" : value;
+  if (value % 3 == 0) {
+    return "fizz";
+  }else if (value % 5 == 0) {
+    return "buzz";
+  }else {
+    return value;
+  }
 }
 
 // fizzbuzz(1) => 1
