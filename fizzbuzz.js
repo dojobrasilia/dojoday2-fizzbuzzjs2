@@ -20,11 +20,12 @@ describe('FizzBuzz', () => {
   it('returns fizzbuzz', () => {
     assert.equal('fizzbuzz', fizzBuzz(15));
   });
+
 });
 
 function fizzBuzz(value) {
   if (value % 3 == 0 && value % 5 == 0) {
-    return "fizzbuzz";    
+    return "fizzbuzz";
   }
   else if (value % 3 == 0) {
     return "fizz";
@@ -34,6 +35,10 @@ function fizzBuzz(value) {
     return value;
   }
 }
+
+// for (var i = 1; i <= 100; i++) {
+//   console.log(fizzBuzz(i));
+// }
 
 // fizzbuzz(1) => 1
 // fizzbuzz(2) => 2
